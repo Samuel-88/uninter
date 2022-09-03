@@ -1,0 +1,400 @@
+/* RESET */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+em,
+img,
+strong,
+u,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+article,
+aside,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+time,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 1;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+a,
+a:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+:focus {
+    outline: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+h1 {
+    font: 400 24px 'Roboto';
+    margin: 25px;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 45px;
+}
+
+/* MAIN */
+.principal {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    top: 0;
+    text-align: center;
+    align-items: center;
+    background: #f1f1f1;
+}
+
+.principal img {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 90px 0 10px 0;
+    animation: 3s principal-img;
+}
+
+/* Animação para Foto Principal */
+@keyframes principal-img {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.principal h2 {
+    font: 300 22px 'Roboto';
+    margin-top: 80px;
+}
+
+.principal h3 {
+    font: 100 16px 'Roboto';
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.conteudo-principal {
+    animation: 3s conteudo-principal;
+}
+
+/* Animação para Informações Principais */
+@keyframes conteudo-principal {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.principal h4 {
+    font: bold 16px 'Roboto';
+    letter-spacing: 0.5;
+}
+
+.principal p {
+    font: 100 16px 'Roboto';
+    line-height: 30px;
+}
+
+.fa-brands {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#sobre {
+    font: 18px 'Roboto';
+    line-height: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+#sobre h2 {
+    text-align: center;
+    font: 400 20px 'Roboto';
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#sobre p {
+    font: 18px 'Roboto';
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#experiencia {
+    display: flex;
+    justify-content: space-between;
+    background: #f1f1f1;
+    line-height: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+#experiencia h2 {
+    position: relative;
+    left: 700px;
+    bottom: 20px;
+    font: 400 20px 'Roboto';
+    text-align: center;
+}
+
+#experiencia h3 {
+    font: bold 16px 'Roboto';
+    margin: 20px 130px 5px 0;
+}
+
+#experiencia p,
+#experiencia h4,
+#experiencia li {
+    font: 18px 'Roboto';
+    margin-right: 130px;
+    line-height: 30px;
+}
+
+#experiencia li {
+    text-align: left;
+    list-style-type: square;
+    content: initial;
+    display: list-item;
+}
+
+#formacao {
+    line-height: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+#formacao h2 {
+    font: 400 20px 'Roboto';
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#formacao h3 {
+    font: bold 16px 'Roboto';
+    margin-top: 20px;
+}
+
+#formacao p,
+#formacao h4,
+#formacao li {
+    font: 18px 'Roboto';
+}
+
+#habilidades {
+    background: #f1f1f1;
+    height: 180px;
+}
+
+#habilidades h2 {
+    font: 400 20px 'Roboto';
+    text-align: center;
+    padding: 20px;
+}
+
+.card-geral {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 80%;
+    margin-left: 150px;
+}
+
+.card {
+    display: inline-block;
+    background-color: #dcdcdc;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 0 0 1em 0;
+    width: 200px;
+}
+
+.card:hover {
+    transition: ease 1s all;
+    box-shadow: 0 4px 30px 4px #ccc;
+}
+
+#portfolio {
+    font: 18px 'Roboto';
+    line-height: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+#portfolio h2 {
+    text-align: center;
+    font: 400 20px 'Roboto';
+    margin: 20px 0;
+}
+
+#contato {
+    background: #f1f1f1;
+}
+
+form {
+    background: #dcdcdc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    margin: 100px auto 0;
+}
+
+legend {
+    font: 700 20px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+    width: 100%;
+}
+
+input[type="text"],
+select,
+textarea {
+    font: 14px Arial, Helvetica, sans-serif;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    width: 393px;
+}
+
+li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.campo {
+    width: 30%;
+}
+
+input[type="submit"] {
+    width: 50%;
+    padding: 15px;
+    font: 700 18px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    background: #dcdcdc;
+    border-radius: 10px;
+    margin: 20px 0 10px 150px;
+    transition: 5s ease all;
+}
+
+input[type="submit"]:hover {
+    background: #808080;
+}
+
+input[type="submit"],
+label {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+}
